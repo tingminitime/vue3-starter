@@ -1,18 +1,55 @@
-# Vue 3 + TypeScript + Vite
+<p align="center">
+<img src="./public/icon-vue.svg" width="156" />
+</p>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Vue 3 Template
 
-## Recommended IDE Setup
+![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/nuxt/master?color=00dc82)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/tailwindcss/master?color=0ea5e9)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/pinia/master?color=ffd859)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/%40vueuse%2Fnuxt/master?color=41b883)　![GitHub package.json dependency version (subfolder of monorepo)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/%40headlessui%2Fvue?color=69bdfe)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/eslint/master?color=4B32C3)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+This Vue 3 template is inspired by [antfu/vitesse-lite](https://github.com/antfu/vitesse-lite).
 
-## Type Support For `.vue` Imports in TS
+## Features
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- [Vue 3](https://vuejs.org/)
+- [ESLint](https://eslint.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
+- [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
+- [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
+- [tailwindcss/container-queries](https://github.com/tailwindlabs/tailwindcss-container-queries)
+- [headless UI](https://headlessui.com/)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Nuxt Modules :
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- [Pinia](https://nuxt.com/modules/pinia)
+- [VueUse](https://nuxt.com/modules/vueuse)
+
+## Prerequistes
+
+- Node.js >= v20.0.0
+- pnpm >= v8.0.0
+- [VS Code](https://code.visualstudio.com/)
+
+### VS Code Extensions
+
+- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)p
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+## ESLint Configuration
+
+This template uses [@antfu/eslint-config](https://github.com/antfu/eslint-config).
+
+## Development
+
+```bash
+pnpm dev
+```
+
+## Clone to local
+
+```bash
+npx degit tingminitime/nuxt3-template <your-project-name>
+cd <your-project-name>
+pnpm install # If you don't have pnpm installed, run `npm i -g pnpm` first.
+```
