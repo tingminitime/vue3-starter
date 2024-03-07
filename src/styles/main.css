@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html.dark {
-    background: #121212;
+html.dark {
+  background-color: #282c34;
+  color: white;
+}
+
+@layer components {
+  .my-link {
+    @apply rounded-lg hover:bg-gray-700/50 transition-all;
   }
 }

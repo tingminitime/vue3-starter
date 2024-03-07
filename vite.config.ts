@@ -15,6 +15,9 @@ export default defineConfig({
     },
   },
   plugins: [
+    // https://github.com/posva/unplugin-vue-router
+    VueRouter(),
+
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: [
@@ -24,7 +27,7 @@ export default defineConfig({
         {
           // add any other you were relying on
           'vue-router/auto': ['useLink'],
-        }
+        },
       ],
       dts: true,
       dirs: [
@@ -37,9 +40,6 @@ export default defineConfig({
     Components({
       dts: true, // enabled by default if `typescript` is installed
     }),
-
-    // https://github.com/posva/unplugin-vue-router
-    VueRouter(),
 
     vue(),
   ],
