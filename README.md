@@ -4,25 +4,22 @@
 
 # Vue 3 Template
 
-![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/nuxt/master?color=00dc82)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/tailwindcss/master?color=0ea5e9)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/pinia/master?color=ffd859)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/%40vueuse%2Fnuxt/master?color=41b883)　![GitHub package.json dependency version (subfolder of monorepo)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/%40headlessui%2Fvue?color=69bdfe)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/nuxt3-template/dev/eslint/master?color=4B32C3)
+![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/vue/master?color=00dc82)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/tailwindcss/master?color=0ea5e9)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/pinia/master?color=ffd859)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/%40vueuse%2Fnuxt/master?color=41b883)　![GitHub package.json dependency version (subfolder of monorepo)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/%40headlessui%2Fvue?color=69bdfe)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/eslint/master?color=4B32C3)
 
 This Vue 3 template is inspired by [antfu/vitesse-lite](https://github.com/antfu/vitesse-lite).
 
 ## Features
 
 - [Vue 3](https://vuejs.org/)
+- [Pinia](https://pinia.vuejs.org/)
+- [VueUse](https://vueuse.org/)
 - [ESLint](https://eslint.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
 - [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
 - [tailwindcss/container-queries](https://github.com/tailwindlabs/tailwindcss-container-queries)
-- [headless UI](https://headlessui.com/)
-
-Nuxt Modules :
-
-- [Pinia](https://nuxt.com/modules/pinia)
-- [VueUse](https://nuxt.com/modules/vueuse)
+- [@egoist/tailwindcss-icons](https://iconify.design/docs/usage/css/tailwind/)
 
 ## Prerequistes
 
@@ -49,7 +46,7 @@ pnpm dev
 ## Clone to local
 
 ```bash
-npx degit tingminitime/nuxt3-template <your-project-name>
+npx degit tingminitime/vue3-template <your-project-name>
 cd <your-project-name>
 pnpm install # If you don't have pnpm installed, run `npm i -g pnpm` first.
 ```

@@ -1,7 +1,7 @@
 <template>
-  <div class="px-4 py-10 text-center">
-    <Logos />
+  <main class="px-4 py-10 text-center">
+    <TheLogos class="mb-4" />
     <RouterView />
-    <TheFooter />
-  </div>
+    <TheFooter class="mt-6" />
+  </main>
 </template>

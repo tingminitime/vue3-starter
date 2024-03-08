@@ -2,25 +2,23 @@
 </script>
 
 <template>
-  <nav class="mt-6 inline-flex gap-2">
-    <button
-      type="button"
-      class="block"
+  <nav class="mx-auto grid max-w-40 grid-cols-3 place-items-center">
+    <Link
+      href="/"
+      class="flex items-center justify-center rounded p-1 transition-all hover:bg-gray-300/50 dark:hover:bg-gray-700/50"
     >
-      <span
-        class="i-carbon-sun text-2xl dark:i-carbon-moon"
-        @click="toggleDark()"
-      ></span>
-    </button>
+      <span class="i-carbon-home text-2xl text-gray-700 dark:text-gray-300"></span>
+    </Link>
 
-    <a
+    <Link
       href="https://github.com/tingminitime"
-      rel="noreferrer"
-      target="_blank"
       title="GitHub"
+      class="flex items-center justify-center rounded p-1 transition-all hover:bg-gray-300/50 dark:hover:bg-gray-700/50"
     >
-      <span class="i-carbon-logo-github text-2xl"></span>
-    </a>
+      <span class="i-carbon-logo-github text-2xl text-gray-700 dark:text-gray-300"></span>
+    </Link>
+
+    <ThemeSwitcher />
   </nav>
 </template>
 

@@ -2,17 +2,6 @@
   <div class="grid grid-cols-3 place-content-center gap-x-2 md:grid-cols-[repeat(5,_minmax(100px,_auto))]">
     <a
       class="my-link flex flex-col items-center px-4 py-2"
-      href="https://nuxt.com/"
-      target="_blank"
-    >
-      <img
-        src="/icon-nuxt.svg"
-        class="inline-block size-16"
-      >
-      <span class="text-green-500">Nuxt 3</span>
-    </a>
-    <a
-      class="my-link flex flex-col items-center px-4 py-2"
       href="https://vitejs.dev/"
       target="_blank"
     >
@@ -21,6 +10,17 @@
         class="size-16 p-2"
       >
       <span class="text-purple-500">Vite</span>
+    </a>
+    <a
+      class="my-link flex flex-col items-center px-4 py-2"
+      href="https://vuejs.org/"
+      target="_blank"
+    >
+      <img
+        src="/icon-vue.svg"
+        class="size-16 p-2"
+      >
+      <span class="text-emerald-500">Vue</span>
     </a>
     <a
       class="my-link flex flex-col items-center px-4 py-2"

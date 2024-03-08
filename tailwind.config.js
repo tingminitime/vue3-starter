@@ -11,13 +11,29 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['DM sans', '"Noto Sans TC"', ...defaultTheme.fontFamily.sans],
       },
       height: {
         screen: ['100vh', '100dvh'],
       },
       minHeight: {
         screen: ['100vh', '100dvh'],
+      },
+      colors: {
+        primary: {
+          DEFAULT: 'hsl(0, 0%, 93%)',
+          light: 'hsl(0, 0%, 93%)',
+          dark: 'hsl(220, 13%, 18%)',
+        },
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-6deg)' },
+          '50%': { transform: 'rotate(6deg)' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
       },
     },
   },
@@ -27,7 +43,7 @@ export default {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/container-queries'),
     iconsPlugin({
-      collections: getIconCollections(['carbon'])
-    })
+      collections: getIconCollections(['carbon']),
+    }),
   ],
 }
