@@ -4,13 +4,14 @@
 
 # Vue 3 Template
 
-![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/vue/master?color=00dc82)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/tailwindcss/master?color=0ea5e9)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/pinia/master?color=ffd859)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/%40vueuse%2Fcore/master?color=41b883)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/eslint/master?color=4B32C3)
+![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/vue/master?color=00dc82)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/vue-router/master?color=00dc82)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/pinia/master?color=ffd859)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/tailwindcss/master?color=0ea5e9)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/%40vueuse%2Fcore/master?color=41b883)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/eslint/master?color=4B32C3)
 
 This Vue 3 template is inspired by [antfu/vitesse-lite](https://github.com/antfu/vitesse-lite).
 
 ## Features
 
 - [Vue 3](https://vuejs.org/)
+- [Vue Router 4](https://router.vuejs.org/)
 - [Pinia](https://pinia.vuejs.org/)
 - [VueUse](https://vueuse.org/)
 - [ESLint](https://eslint.org/)
