@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const params = useRoute('/hi/[name]').params
+const params = useRoute().params
 const router = useRouter()
 </script>
 

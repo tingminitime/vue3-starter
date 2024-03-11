@@ -24,6 +24,8 @@ function go() {
       </em>
     </p>
 
+    <Counter class="mb-4" />
+
     <TheInput
       v-model="name"
       placeholder="What's your name ?"

@@ -1,40 +1,39 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
+    "jsx": "preserve",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
     "baseUrl": ".",
-    "skipLibCheck": true,
-    "paths": {
-      "~/*": ["src/*"],
-    },
-    "types": [
-      "vite/client",
-      "unplugin-vue-router/client",
-    ],
+    "module": "ESNext",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "paths": {
+      "~/*": ["src/*"]
+    },
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "preserve",
+    "types": [
+      "vite/client"
+    ],
+    "allowImportingTsExtensions": true,
 
     /* Linting */
     "strict": true,
     "strictNullChecks": true,
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    "noEmit": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
+  "references": [{ "path": "./tsconfig.node.json" }],
   "exclude": [
     "node_modules",
     "dist",
-    "eslint.config.js",
-  ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+    "eslint.config.js"
+  ]
 }
