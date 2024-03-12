@@ -6,22 +6,27 @@ const store = useCounterStore()
 
 <template>
   <div>
-    <p>Count: {{ store.count }}</p>
-    <div class="flex justify-center gap-x-2">
+    <p class="mb-4">
+      Count: {{ store.count }}
+    </p>
+    <div class="mx-auto grid max-w-[30rem] grid-cols-1 gap-4 md:grid-cols-[repeat(3,_minmax(8rem,_1fr))]">
       <button
         type="button"
+        class="my-btn"
         @click="store.decrement"
       >
         Decrement
       </button>
       <button
         type="button"
+        class="my-btn"
         @click="store.increment"
       >
         Increment
       </button>
       <button
         type="button"
+        class="my-btn"
         @click="store.doubleCount"
       >
         Double Count

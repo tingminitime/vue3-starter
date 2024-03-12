@@ -24,7 +24,7 @@ function go() {
       </em>
     </p>
 
-    <Counter class="mb-4" />
+    <TheCounter class="mb-6" />
 
     <TheInput
       v-model="name"
