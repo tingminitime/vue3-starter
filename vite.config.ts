@@ -5,6 +5,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import VueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
   resolve: {
@@ -33,6 +34,9 @@ export default defineConfig({
     }),
 
     vue(),
+
+    // https://github.com/vuejs/devtools-next
+    VueDevTools(),
   ],
 
   // https://github.com/vitest-dev/vitest
