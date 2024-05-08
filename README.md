@@ -30,7 +30,7 @@ This Vue 3 template is inspired by [antfu/vitesse-lite](https://github.com/antfu
 
 ### VS Code Extensions
 
-- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)p
+- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
