@@ -1,5 +1,5 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
 const { iconsPlugin, getIconCollections } = require('@egoist/tailwindcss-icons')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 export default {

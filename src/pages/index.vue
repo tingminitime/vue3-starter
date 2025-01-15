@@ -20,7 +20,7 @@ function go() {
 
     <p class="mb-6 text-sm text-gray-700 dark:text-gray-300">
       <em>
-        This Vue 3 template is inspired by <Link href="https://github.com/antfu/vitesse-lite">antfu/vitesse-lite</Link>
+        This Vue 3 starter template is inspired by <Link href="https://github.com/antfu-collective/vitesse-lite">antfu/vitesse-lite</Link>
       </em>
     </p>
 

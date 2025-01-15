@@ -2,7 +2,7 @@ import antfu from '@antfu/eslint-config'
 import tailwindcss from 'eslint-plugin-tailwindcss'
 
 export default antfu(
-  /* onfigures for antfu's config */
+  /* configures for antfu's config */
   {
     vue: {
       overrides: {
@@ -21,9 +21,17 @@ export default antfu(
     },
     javascript: {
       overrides: {
-        'unused-imports/no-unused-vars': 'warn',
-        'unused-imports/no-unused-imports': 'warn',
         'no-unused-vars': 'warn',
+        'unused-imports/no-unused-vars': [
+          'warn',
+          {
+            vars: 'all',
+            varsIgnorePattern: '^_',
+            args: 'after-used',
+            argsIgnorePattern: '^_',
+          },
+        ],
+        'unused-imports/no-unused-imports': 'warn',
       },
     },
     ignores: [
@@ -60,8 +68,17 @@ export default antfu(
   /* From the second arguments they are ESLint Flat Configs */
   {
     rules: {
-      'no-unused-vars': 'off',
+      'no-console': 'warn',
       'node/prefer-global/process': 'off',
+      'no-unused-vars': [
+        'warn',
+        {
+          vars: 'all',
+          varsIgnorePattern: '^_',
+          args: 'after-used',
+          argsIgnorePattern: '^_',
+        },
+      ],
     },
   },
   {

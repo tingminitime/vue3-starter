@@ -1,10 +1,10 @@
-/// <reference types="vitest" />
+/// <reference types="vitest/config" />
 
 import path from 'node:path'
-import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { defineConfig } from 'vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
