@@ -12,7 +12,7 @@ describe('test component TheInput', () => {
     const wrapper = mount(TheInput, {
       props: {
         'modelValue': 'initial text',
-        'onUpdate:modelValue': (value: string) => {
+        'onUpdate:modelValue': (value: string | undefined) => {
           wrapper.setProps({ modelValue: value })
         },
       },

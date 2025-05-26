@@ -15,12 +15,12 @@ function go() {
 <template>
   <div>
     <div class="mb-2">
-      Vue 3 Starter Template
+      Vue 3 Starter
     </div>
 
     <p class="mb-6 text-sm text-gray-700 dark:text-gray-300">
       <em>
-        This Vue 3 starter template is inspired by <Link href="https://github.com/antfu-collective/vitesse-lite">antfu/vitesse-lite</Link>
+        This project is inspired by <Link href="https://github.com/antfu-collective/vitesse-lite">antfu/vitesse-lite</Link>
       </em>
     </p>
 

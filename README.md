@@ -2,7 +2,7 @@
 <img src="./public/icon-vue.svg" width="156" />
 </p>
 
-# Vue 3 Starter Template
+# Vue 3 Starter
 
 ![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/vue/master?color=00dc82)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/vue-router/master?color=00dc82)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/pinia/master?color=ffd859)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/tailwindcss/master?color=0ea5e9)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/%40vueuse%2Fcore/master?color=41b883)　![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/tingminitime/vue3-template/dev/eslint/master?color=4B32C3)
 
@@ -25,7 +25,7 @@ This Vue 3 starter template is inspired by [antfu/vitesse-lite](https://github.c
 ## Prerequistes
 
 - Node.js >= v20.0.0
-- pnpm >= v8.0.0
+- pnpm >= v10.0.0
 - [VS Code](https://code.visualstudio.com/)
 
 ### VS Code Extensions
@@ -36,7 +36,7 @@ This Vue 3 starter template is inspired by [antfu/vitesse-lite](https://github.c
 
 ## ESLint Configuration
 
-This template uses [@antfu/eslint-config](https://github.com/antfu/eslint-config).
+This starter uses [@antfu/eslint-config](https://github.com/antfu/eslint-config).
 
 ## Development
 
