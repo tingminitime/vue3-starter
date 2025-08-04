@@ -1,6 +1,7 @@
 /// <reference types="vitest/config" />
 
 import path from 'node:path'
+import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -32,6 +33,8 @@ export default defineConfig({
     Components({
       dts: true, // enabled by default if `typescript` is installed
     }),
+
+    tailwindcss(),
 
     vue(),
 

@@ -3,7 +3,12 @@ import { logos } from '~/constants'
 </script>
 
 <template>
-  <div class="grid grid-cols-3 place-content-center gap-x-2 md:grid-cols-[repeat(5,_minmax(100px,_auto))]">
+  <div
+    class="
+      grid grid-cols-3 place-content-center gap-x-2
+      md:grid-cols-[repeat(5,_minmax(100px,_auto))]
+    "
+  >
     <a
       v-for="logo in logos"
       :key="logo.text"

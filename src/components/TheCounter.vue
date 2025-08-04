@@ -9,7 +9,12 @@ const store = useCounterStore()
     <p class="mb-4">
       Count : <br><span class="text-4xl font-bold">{{ store.count }}</span>
     </p>
-    <div class="mx-auto grid max-w-[30rem] grid-cols-1 gap-4 md:grid-cols-[repeat(3,_minmax(8rem,_1fr))]">
+    <div
+      class="
+        mx-auto grid max-w-[30rem] grid-cols-1 gap-4
+        md:grid-cols-[repeat(3,_minmax(8rem,_1fr))]
+      "
+    >
       <button
         type="button"
         class="my-btn"
