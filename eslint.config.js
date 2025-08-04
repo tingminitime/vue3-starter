@@ -1,39 +1,9 @@
 import antfu from '@antfu/eslint-config'
-import tailwindcss from 'eslint-plugin-tailwindcss'
+import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss'
 
 export default antfu(
   /* configures for antfu's config */
   {
-    vue: {
-      overrides: {
-        'vue/no-unused-vars': 'warn',
-        'vue/max-attributes-per-line': 'error',
-        'vue/html-self-closing': ['error', {
-          html: {
-            void: 'never',
-            normal: 'never',
-            component: 'always',
-          },
-          svg: 'always',
-          math: 'always',
-        }],
-      },
-    },
-    javascript: {
-      overrides: {
-        'no-unused-vars': 'warn',
-        'unused-imports/no-unused-vars': [
-          'warn',
-          {
-            vars: 'all',
-            varsIgnorePattern: '^_',
-            args: 'after-used',
-            argsIgnorePattern: '^_',
-          },
-        ],
-        'unused-imports/no-unused-imports': 'warn',
-      },
-    },
     ignores: [
       'node_modules/',
       'dist/',
@@ -82,26 +52,69 @@ export default antfu(
     },
   },
   {
+    // @see: https://github.com/schoero/eslint-plugin-better-tailwindcss?tab=readme-ov-file#rules
     plugins: {
-      tw: tailwindcss,
+      'better-tailwindcss': eslintPluginBetterTailwindcss,
     },
     rules: {
-      /* Add custom rules */
-      'tw/classnames-order': 'error',
-      'tw/enforces-negative-arbitrary-values': 'error',
-      'tw/enforces-shorthand': 'error',
-      'tw/migration-from-tailwind-2': 'error',
-      'tw/no-arbitrary-value': 'off',
-      'tw/no-custom-classname': [
+      ...eslintPluginBetterTailwindcss.configs['recommended-warn'].rules,
+      'better-tailwindcss/enforce-consistent-line-wrapping': [
         'warn',
         {
-          whitelist: [
-            'my\\-(.*)', // You can rewrite this regex
-            'theme-toggle',
-          ],
+          group: 'newLine',
+          preferSingleLine: true,
+          printWidth: 80,
         },
       ],
-      'tw/no-contradicting-classname': 'error',
+      'better-tailwindcss/no-unregistered-classes': [
+        'warn',
+        {
+          detectComponentClasses: true,
+        },
+      ],
+    },
+    settings: {
+      'better-tailwindcss': {
+        entryPoint: './src/styles/main.css',
+      },
+    },
+  },
+  {
+    rules: {
+      'vue/no-multiple-template-root': 'off',
+      'vue/no-unused-vars': 'warn',
+      'vue/max-attributes-per-line': 'error',
+      'vue/html-self-closing': ['error', {
+        html: {
+          void: 'never',
+          normal: 'never',
+          component: 'always',
+        },
+        svg: 'always',
+        math: 'always',
+      }],
+      'unused-imports/no-unused-vars': [
+        'warn',
+        {
+          vars: 'all',
+          varsIgnorePattern: '^_',
+          args: 'after-used',
+          argsIgnorePattern: '^_',
+        },
+      ],
+      'unused-imports/no-unused-imports': 'warn',
+      'no-unused-vars': 'warn',
+      'no-console': 'warn',
+      'node/prefer-global/process': 'off',
+      'ts/no-unused-vars': [
+        'warn',
+        {
+          vars: 'all',
+          varsIgnorePattern: '^_',
+          args: 'after-used',
+          argsIgnorePattern: '^_',
+        },
+      ],
     },
   },
 )

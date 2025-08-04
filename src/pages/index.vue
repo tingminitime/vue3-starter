@@ -3,9 +3,10 @@ defineOptions({
   name: 'IndexPage',
 })
 
+const router = useRouter()
+
 const name = ref('')
 
-const router = useRouter()
 function go() {
   if (name.value)
     router.push(`/hi/${encodeURIComponent(name.value)}`)
@@ -20,7 +21,10 @@ function go() {
 
     <p class="mb-6 text-sm text-gray-700 dark:text-gray-300">
       <em>
-        This project is inspired by <Link href="https://github.com/antfu-collective/vitesse-lite">antfu/vitesse-lite</Link>
+        This project is inspired by <Link
+          href="https://github.com/antfu-collective/vitesse-lite"
+          target="_blank"
+        >antfu/vitesse-lite</Link>
       </em>
     </p>
 

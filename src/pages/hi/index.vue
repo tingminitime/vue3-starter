@@ -5,7 +5,9 @@ const router = useRouter()
 
 <template>
   <div class="flex flex-col items-center gap-y-4">
-    <div class="animate-[wiggle_1s_ease-in-out_infinite] text-yellow-500 dark:text-yellow-400">
+    <div
+      class="animate-wiggle text-yellow-500 dark:text-yellow-400"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"
