@@ -3,8 +3,19 @@ name: CI
 on:
   push:
     branches: [master]
+    paths-ignore: [
+      'docs/**',
+      'README.md',
+      'LICENSE',
+    ]
+
   pull_request:
     branches: [master]
+
+  workflow_dispatch:
+  
+permissions:
+  contents: write
 
 jobs:
   ci:
@@ -21,6 +32,8 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 10
 
       - name: Get pnpm store directory
         shell: bash
@@ -46,3 +59,9 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
