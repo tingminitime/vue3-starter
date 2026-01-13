@@ -1,1 +1,0 @@
-import{d as s,c as n,a as e,b as a,e as r,o as u}from"./index-B22SHd5Q.js";const l={class:"text-red-400"},i=s({__name:"NotFound",setup(m){const o=r();return(p,t)=>(u(),n("div",l,[t[1]||(t[1]=e("p",{class:"mb-4"},[e("em",null,"Page Not Found.")],-1)),e("button",{type:"button",class:"my-btn mx-auto",onClick:t[0]||(t[0]=c=>a(o).push("/"))}," Back ")]))}});export{i as default};
