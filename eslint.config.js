@@ -66,7 +66,7 @@ export default antfu(
           printWidth: 80,
         },
       ],
-      'better-tailwindcss/no-unregistered-classes': [
+      'better-tailwindcss/no-unknown-classes': [
         'warn',
         {
           detectComponentClasses: true,
